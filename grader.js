@@ -73,7 +73,6 @@ if(require.main == module) {
     program.option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT);
     program.option('-f, --file <html_file>', 'Path to check', clone(assertFileExists), HTMLFILE_DEFAULT);
     program.option('-u, --url <url>', 'Url to check');
-    //program.parse(args);
     program.parse(process.argv);
     
     if (program.url == null)
